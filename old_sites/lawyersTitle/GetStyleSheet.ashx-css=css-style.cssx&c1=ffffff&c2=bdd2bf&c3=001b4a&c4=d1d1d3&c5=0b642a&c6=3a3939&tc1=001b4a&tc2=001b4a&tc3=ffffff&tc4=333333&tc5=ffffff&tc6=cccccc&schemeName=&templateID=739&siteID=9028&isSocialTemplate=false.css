@@ -1,0 +1,644 @@
+body {background-color:#ffffff; font-family:'Open Sans',sans-serif;}
+ul, li {list-style:none; padding:0; margin:0;}
+a:link, a:active, a:visited {color:#25408e; text-decoration:none;}
+h1 {color:#001b4a; font-size:2.2em; margin:0 0 10px 0;}
+h2 {color:#001b4a; font-size:1.6em; font-weight:bold; margin:30px 0 40px 0; text-align:center;}
+h2.page-title {color:#001b4a; font-size:2.8em; font-weight:bold; margin:30px 0 40px 0; text-align:center;}
+h3 {color:#001b4a; font-size:1.2em; margin:0 0 10px 0;}
+h3.ital {color:#001b4a; font-size:1.2em; font-weight:normal; font-style:italic; margin:0 0 10px 0;}
+h3.red {color: #d92830;font-size: 1.2em;font-weight: bold;margin-top: 30px;padding: 6px 0;text-align: center;}
+h4 {color:#001b4a; font-size:1em; margin:0 0 10px 0;}
+.content {position:relative; width:1030px; margin:0 auto;}
+.container {padding:0;}
+
+/* clearing helpers */
+	.clear {clear:both;  display:block;  content:"";  height:0px;  overflow:hidden;  visibility:hidden;}
+	.cf:before,
+	.cf:after {content:"";  display:table;}
+	.cf:after {clear:both;}
+	.cf {*zoom:1;}
+
+#logo-top {float:left; margin:48px 0 14px 0; width:250px;}
+#search-top {height:60px; overflow:hidden; position:absolute; right:0; top:0; width:300px;}
+#search-top *, #search-top *:before, #search-top *:after {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+#gsc-i-id1 {height:18px !important;}
+input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {background-color:#bdd2bf !important; border-color:#6d9a72 !important;}
+#social-top {float:right; margin:56px 20px 0 0; text-align:right; width:300px;}
+#nav-top, .wrapper-wide #nav-top {background:#001b4a; position:relative; text-align:center;}
+	#nav-top .large-screen-nav {margin:4px auto 12px auto; position:relative;}
+	.large-screen-nav li {color:#dddee3; display:inline-block; list-style:none; text-transform:uppercase; font-size:.9em; padding:11px 25px 0 25px;}
+/*	.large-screen-nav li[x-data-nav-url$="advantage"] {display:none;} */
+	.large-screen-nav li a {color:#dddee3;}
+	.large-screen-nav li a:hover {color:#7ca0c5;}
+	.large-screen-nav li > ul {margin-left:-20px; padding:10px 0 0 0;}
+	.large-screen-nav li > ul li {background-color:#001b4a; display:block; float:none; font-size:1em; white-space:nowrap; padding:10px 20px 10px 20px; text-align:left;}
+	.nav-level-1 {display:none;}
+
+	#nav-top .small-screen-nav, .wrapper-wide #nav-top .small-screen-nav {display:none; background:#001b4a; width:auto; border:0; padding:16px; top:40px;  left:210px;}
+	#nav-top .small-screen-nav li a, #nav-top .small-screen-nav li span, .wrapper-wide #nav-top .small-screen-nav li a, .wrapper-wide #nav-top .small-screen-nav li span {color:#dddee3; font-size:.8em;}
+	#nav-top .small-screen-nav li a:hover, .wrapper-wide #nav-top .small-screen-nav li a:hover {color:#7ca0c5; background:none;}
+	#nav-top .small-screen-nav ul, .wrapper-wide #nav-top .small-screen-nav ul {border:0;}
+	
+	#openNavButton {display:none;  margin:0.25em auto;  padding:0.5em 1em; background:none; border:0; color:#fff;}
+	
+#hero {background-color:#d1d1d3; position:relative;}
+
+	[data-bn-fader="viewport"] {height:428px; position:relative;  overflow:hidden;}
+	#hero .photo {width:100%; display:none; position:absolute;}
+
+.col-left {float:left; margin:28px 0 0 0; width:220px;}
+	.col-left-login {background:#bdd2bf; color:#3d4e84; margin:0 0 4px 0; padding:10px;}
+		.col-left-login h5 {font-weight:bold;}
+		.col-left-login td {padding:0 0 8px 0; text-align:right;}
+		.col-left-login td.labelTD {padding-right:8px;}
+		.col-left-login input[type="text"], .col-left-login input[type="password"] {width:100%;}
+		.col-left-login input[type="submit"] {background:#38679d; border:0; color:#fff; font-size:.8em; padding:6px 0; text-transform:uppercase; width:100%;}
+	.col-left .btn-home {background:url("Templates/t739/images/button-bg.png") right center no-repeat #d1d1d3; color:#444; display:block; font-size:.9em; margin:8px 0 0 0; padding:8px 6px 8px 16px; text-transform:uppercase;}
+	.col-left .btn-home:hover {background-color:#ccc; color:#000;}
+.col-middle {float:left; margin:28px 30px 0 30px; width:448px;}
+	.col-middle #user_custom_content {background:none;}
+.col-right {float:right; margin:28px 0 0 0; width:302px;}
+
+	#homePageBanner img {display:block; height:auto; max-width:100%;}
+	
+	#imagesContainer {float:right; position:relative; width:300px; height:436px}
+	#imagesContainer img {position:absolute; top:0px; left:0px; display:none; width:300px; height:436px;}
+	#imagesContainer img:first-child {display:block;}
+
+#user_custom_content {background:url("Templates/t739/images/content-bg-trans.png") 0 0 repeat-y;}
+.imgCenter {margin-bottom:20px; text-align:center;}
+	.imgCenter img {margin-bottom:20px;}
+.newsletters {margin:0 auto 0 100px; width:100%;}
+.newsletters ul {float:left; font-size:1.2em; margin:0 10px; padding:8px; width:25%;}
+	.newsletters ul li {padding:6px;}
+.offices {text-align:center;}
+	.offices h4 {font-size:1.6em; font-weight:bold;}
+	.offices h5 {color:#001b4a; font-size:1.2em; font-weight:bold;}
+	.offices h6 {color:#001b4a; font-size:1em; font-weight:bold;}
+	.offices .center {margin:0 auto; width:600px;}
+	.offices .float-left {float:left; width:50%;}
+	.offices .float-right {float:right; width:50%;}
+.navScreen {margin:0 auto; text-align:center; width:800px;}
+	.navScreen h1 {color:#333; font-size:2.2em; margin:0 0 40px 0;}
+	.navScreen p {margin-bottom:20px; text-align:left;}
+	.navScreen h3 {color:#d92830; font-size:1.2em; font-weight:bold; margin-bottom:40px; padding:6px 0; text-align:center;}
+
+.navButton {background:#001b4a; border-radius:10px; color:#fff !important; display:block; font-size:1.4em; margin:0 auto 40px auto; padding:8px 40px; width:400px;}
+.navButton:hover {background:#001b4a; color:#7ca0c5 !important;}
+.newsletters li .navButton {text-align:center; width:200px;}
+.financial-info .navButton {text-align:center; width:340px;}
+.forms {margin-top:-20px;}
+	.forms .col-1 {float:left; margin-left:5%; width:45%;}
+	.forms .col-2 {float:left; margin-left:5%; width:45%;}
+	.forms p.note {margin:0 auto 20px auto; text-align:center; width:600px;}
+	.forms h3 {color:#d92830; font-size:1.2em; font-weight:bold; margin-top:30px; padding:6px 0; text-align:center;}
+	.forms h4 {font-size:1em; font-weight:bold; margin:20px 0 8px 0;}
+	.forms li {margin:0 0 10px 0; padding:0 0 0 17px;}
+	.forms .doc {background:url("Templates/t739/images/word.gif") 0 3px no-repeat;}
+	.forms .pdf {background:url("Templates/t739/images/pdf.jpg") 0 3px no-repeat;}
+	.forms .forms-heading {color:#001b4a; font-size:1.4em; font-weight:bold; text-align:left; text-transform:uppercase;}
+.claims-form {text-align:center;}
+
+.calculator {height:600px;}
+.viewport-article-content {margin:0 auto; width:620px;}
+	.viewport-article-content td {padding:8px; text-align:left;}
+.glossary {padding:0 100px;}
+	.glossary li {margin:0 0 20px 0;}
+	.glossary .term {color:#d92830; font-weight:bold;}
+	.glossary .col-1 {float:left; width:48%;}
+	.glossary .col-2 {float:left; margin-left:4%; width:48%;}
+.tech-tools {padding:0;}
+.tech-tools .block {float:left; height:280px; margin:20px 0 0 0; width:49%;}
+	.tech-tools .block:nth-child(even) {margin-right:2%;}
+.tech-tools h3 {color:#d92830; font-size:1em; font-weight:bold; margin:0 0 16px 0; text-transform:uppercase;}
+	.tech-tools h3 .link {font-size:.8em; font-weight:bold; text-transform:none;}
+.tech-tools .thumb {border:2px solid #8a8e8f; border-radius:10px; float:left; height:146px; margin:0 5% 0 0; overflow:hidden; width:220px;}
+.tech-tools ul {float:left; margin:0; width:44%;}
+.tech-tools li {font-size:.8em; list-style-type:disc;}
+.tech-tools span {color:#001b4a; font-size:.8em; font-weight:bold;}
+.tech-tools p {font-size:1.2em; color:#d92830; font-weight:bold; margin-bottom:40px; text-align:center;}
+.tech-tools .platforms {margin:10px 0 0 0;}
+.tech-tools .platforms img {height:30px; margin:0 10px 0 0;}
+
+.contact {font-size:1.2em; font-weight:bold; text-align:center;}
+	.contact p {margin-bottom:20px;}
+	.contact h3 {color:#d92830; font-size:1.4em; font-weight:bold; margin-bottom:20px;}
+	.contact h4 {color:#d92830; font-size:1em; font-weight:bold; margin-bottom:10px;}
+	.contact .gm-style-iw {padding:20px 0 20px 20px;}
+	.contact .gm-style-iw h3 {color:#001b4a;}
+	.contact .gm-style-iw h4 {color:#001b4a; margin:20px 0 6px 0;}
+	.contact .gm-style-iw input[type="text"] {width:250px;}
+	.contact .gm-style-iw input[type="submit"] {margin:20px 0 0 0;}
+#map-contact {border:4px solid #929497; height:500px; margin:0 auto 40px auto; width:600px;}
+
+.maps .map {float:left; margin:0 2% 20px 0; text-align:center; width:30%;}
+	.maps .map h2 {font-size:1.4em;}
+	.maps p {font-size:1.2em; color:#d92830; font-weight:bold; margin-bottom:40px; text-align:center;}
+
+.agent-roster {text-align:center;}	 
+	.agent-roster h3 {font-weight:bold; margin:20px 0 0 0;}
+	.agent-roster h3.bigger {font-size:1.6em; margin-bottom:8px;}
+	.agent-roster h4 {font-style:italic; font-weight:bold; margin:0 0 10px 0;}
+	.agent-roster .agent-anchor {color:#d92830; display:inline-block; font-size:1.4em; font-weight:bold; margin:0 40px 40px 40px;}
+	.agent-roster h3.section-title {font-size:1.6em; font-weight:bold; margin:0 0 40px 0; text-align:left;}
+	.agent-roster .execs {margin-left:100px;}
+	.agent-roster .box {border:1px solid #001b4a; margin-bottom:40px;}
+	.agent-roster .exec {float:left; height:204px; margin:0 2% 40px 10%; overflow:hidden; text-align:left; width:36%;}
+	.agent-roster .execShort {float:left; height:140px; margin:0 2% 40px 10%; overflow:hidden; text-align:left; width:36%;}
+		.agent-roster .exec img, .agent-roster .execShort img {float:left; margin:0 5% 0 0; width:40%;}
+	.agent-roster .teamA {float:left; height:200px; margin:0 2% 40px 2%; overflow:hidden; text-align:right; width:47%;}
+		.agent-roster .teamA img {float:right; margin:0 0 0 5%; width:30%;}
+	.agent-roster .teamB {float:left; height:200px; margin:0 2% 40px 0; overflow:hidden; text-align:left; width:47%;}
+		.agent-roster .teamB img {float:left; margin:0 5% 0 0; width:30%;}
+	.agent-roster .agent {float:left;}
+
+
+/** Agent **/
+
+.agent_roster #agent-search {margin-bottom:1em;}
+.agent_roster #mainContent .content .info p {margin:0; padding-bottom:1em;}
+.agent_roster .buttons {bottom:22px; position:absolute; padding-bottom:0;}
+.agent_roster .buttons a {background:#fff; border:solid 1px #25408e; padding:0.3em 0.95em;}
+.agent_roster .button:hover, #ctl00_ContentPlaceHolder1_Login1_LoginButton:hover, #ctl00_ContentPlaceHolder1_btnSubmit:hover {background:#7ca0c5; color:#ffffff;}
+
+.agent_roster .info a:hover {color:#ec1b23;}
+.agent_roster .info a.button:hover {color:#ffffff;}
+.agent_roster .info {padding:0 0 1em;}
+
+/*.agent_roster #mainContent .content li:nth-child(3), .agent_roster #mainContent .content li:nth-child(6), .agent_roster #mainContent .content li:nth-child(9), .agent_roster #mainContent .content li:nth-child(12), .agent_roster #mainContent .content li:nth-child(15) {margin-right:0;}*/
+
+.agent_roster #mainContent .content li:nth-child(3n+3) {margin-right: 0;}
+
+.agent_roster #mainContent .content .officeList li img {width:100%;}
+.agent_roster #mainContent .content .officeList li {height:490px;}
+
+.agent_roster #mainContent .content li {background:#eee; border: solid 1px #ccc; float:left; height:335px; list-style:none; margin:0 1.85% 1.85% 0; padding:1em 1em; position:relative; width:32.1%;}
+.agent_roster #mainContent .content h3 {font-size:1.8em; margin:0.4em 0;}
+.agent_roster .roster-pagination li {background:none; border:none; float:left; height:auto; list-style:none; margin:-1em 0 !important; padding:0 0 0 1em !important; width:auto;}
+
+.roster-pagination {display: none;}
+
+.offices #agent-search {display:none;}
+.offices .quick-search {display:none;}
+.agentTemplate {display:none;}
+
+/* Agent Detailed Info and Bio styles */
+
+#mainContent .content .agentDetails  {
+	padding:3em 0;
+	width: 100%;
+}
+
+#mainContent .content .agentDetails img {
+	width: 150px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+#mainContent .content .agentDetails h1 {
+	text-align: left;
+}
+
+#mainContent .content .agentDetails p {
+	margin: 0	0 10px 0;
+}
+/*
+#mainContent .content .agentDetails .agentInfo {
+	position: relative;
+	padding-bottom: 30px;
+}*/
+
+
+#mainContent .content .agentDetails .bottomRow {
+	text-align: right;
+	width: 100%;
+}
+
+#mainContent .content .agentDetails .third {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.agentListings .statusNav {
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+.agentListings .statusNav li {
+	float: left;
+	padding: 10px 40px;
+	color: #333333;
+	border: 1px solid #e1e1e1;
+	font-size: 1.5em;
+	cursor: pointer;
+}
+
+.agentListings .statusNav li:first-child {
+	border-right: 0;
+}
+
+.soldListings {
+	display: none;
+}
+
+.agentListings .statusNav .activated {
+	color: #fff;
+	background: #001b4a;
+	cursor: default;
+}
+
+.listingEntry {
+	padding-top: 20px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.customListings li:first-child {
+	border-bottom: 0;
+}
+
+.customListings .listingImage {
+	width: 40%;
+	margin-right: 2%;
+	float: left;
+	position: relative;
+}
+
+.customListings .listingImage h4 {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background: rgba(15, 29, 65, 0.75);
+	color: #fff;
+	font-size: 1.3em;
+	padding: 10px 40px;
+}
+
+#mainContent .content .customListings .listingImage img {
+	width: 100%;
+}
+
+#mainContent .content .agentDetails .third .fa {
+	margin-right: 5px;
+}
+
+#mainContent .content .customListings .listingDetails {
+	width: 58%;
+	float: left;
+	color: #777;
+}
+
+#mainContent .content .listingDetails h5 {
+	font-size: 1.3em;
+	font-weight: bold;
+	color: #555;
+	font-family: 'Open Sans semi-bold';
+	margin-top: 0;
+}
+
+#mainContent .content .listingDetails h6 {
+	font-size: 1.2em;
+	font-family: 'Open Sans';
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+#mainContent .content .listingDetails p {
+	font-size: 1em;
+	font-family: 'Open Sans';
+}
+
+#mainContent .content .listingDetails .listingParticulars p {
+	display: inline-block;
+	margin-right: 10px
+}
+
+.listingIcons {
+	margin-right: 5px;
+}
+
+#mainContent .content .listingDetails button {
+	background: #fff;
+	border: 3px solid #91c0eb;
+	color: #ffffff;
+	font-size: 1em;
+	padding: 8px 28px;
+	margin-top: 25px;
+	transition: background 0.3s ease-in-out;
+}
+
+#mainContent .content .listingDetails button:hover {
+	background: #91c0eb;
+	border: 3px solid #91c0eb;
+	color: #fff;
+}
+
+#mainContent .content .agentInfo a:hover {color:#7ca0c5;}
+
+.roster-pagination {text-align:center;}
+	.roster-pagination li {display:inline-block; margin:4px;}
+	.roster-pagination-current {font-weight:bold;}
+
+.homeValue {border:1px solid #e1e1e1; padding:30px 45px;}
+	#mainContent .content .homeValue h1 {margin-bottom:20px;}
+	.homeValue fieldset {float:left; margin-bottom:40px; width:48%;}
+	.homeValue h3 {color:#384042; font-family:Open Sans; font-size:15px; font-weight:bold;}
+	.homeValue .button {border:none; float:right;}
+	.homeValue td {padding:6px;}
+
+
+
+.siteMap {margin:20px auto; width:200px;}
+	.siteMap ul {margin:0 0 0 20px;}
+	.siteMap li {font-weight:bold;}
+	.siteMap li > ul > li {font-weight:normal;list-style-type:circle;}
+	.siteMap .home {font-weight:bold;}
+
+#footer {background:#3a3939; color:#ccc; font-size:.9em; padding:40px 0; margin-top:20px; text-align:center;}
+	#footer a {color:#bdf1c4;}
+	#footer a:hover {color:#fff;}
+	#footer #Translation a {color:#333;}
+
+
+/********* Form ********/
+
+.cusContact_form_interior {margin:0 auto; padding-bottom:2em; width:560px;}
+.cusContact_form_sections {margin-bottom:0.6em;}
+.cusContact_form_sections .form_input_title {color:#666; display:inline-block; font-size:1.1em; padding-right:2em; text-align:right; width:160px;}
+.cusContact_form_sections input,
+.cusContact_form_sections textarea,
+.cusContact_form_sections select {background:#fafafa; border:solid 1px #999; border-radius:2px; height:35px; padding:5px; width:396px;}
+.cusContact_form_sections select {margin-left:-4px;}
+.cusContact_form_sections textarea {height:initial;}
+
+.cusContact_form_interior .form_captcha {}
+.cusContact_form_interior .form_captcha_title {color:#555; font-size:1.2em; margin-top:1em;}
+.cusContact_form_interior .captcha_image {padding: 1em 0 0.5em 11.35em;}
+.cusContact_form_interior .captcha_image img {width:396px;}
+.cusContact_form_interior .captcha_answer {margin:0 0 0.75em 11.35em;}
+.cusContact_form_interior .captcha_answer input {background:#fafafa; border:solid 1px #999; border-radius:2px; height:35px; padding:5px; width:396px;}
+.cusContact_form_interior .form_button .cusContact_button {background:#011c4b; border:none; color:#fff; font-size:1.2em; margin-left:9.5em; padding:0.35em 1.7em;}
+.cusContact_form_interior .form_button .cusContact_button:hover {background:#076626;}
+
+
+	
+/* Smaller devices */
+@media (max-width:1060px) {
+	.content {width:100%;}
+	#logo-top {margin:48px 0 14px 20px;}
+	#nav-top .large-screen-nav {margin:4px 0 12px 2%; width:98%;}
+	#nav-top, .wrapper-wide #nav-top {text-align:center;}
+	.large-screen-nav > li {float:none; display:inline-block;}
+	.large-screen-nav li > ul li {text-align:left;}
+	.large-screen-nav li {padding:11px 40px 0 0;}
+	.col-left {width:25%;}
+	.col-middle {margin-right:2%; margin-left:2%; width:41%;}
+	.col-right {width:30%;}
+	.col-right img {width:100%;}
+	#user_custom_content {margin-left:20px; margin-right:20px;}
+	.newsletters {margin:0 2%; width:96%;}
+	.newsletters ul {margin:0; width:33%}
+	.newsletters li .navButton {font-size:1.2em; width:100%;}
+	.imgCenter img {margin-right:10%; margin-left:10%; width:80%;}
+	.tech-tools .thumb {width:50%}
+}
+
+@media (max-width:1040px) {
+	.agent_roster #mainContent .content .officeList li {height:440px;}
+}
+
+@media (max-width:1024px) {
+	.agent_roster #mainContent .content h3 {font-size:1.4em;}
+	.agent_roster .roster-pagination li {height:auto; width:auto;}
+}
+
+@media (max-width:960px) {
+	.agent_roster #mainContent .content .officeList li {height:410px;}
+	.button, #ctl00_ContentPlaceHolder1_Login1_LoginButton, #ctl00_ContentPlaceHolder1_btnSubmit {font-size:0.75em; padding:5px 10px;}
+}
+
+@media (max-width:880px) {
+	h1 {font-size:2em;}
+	h2.page-title {font-size:2.6em;}
+	.col-left {width:25%;}
+	.col-left .btn-home {font-size:.8em; padding-left:10px;}
+	.col-middle {width:41%;}
+	.col-right {width:30%;}
+	.navScreen {width:100%;}
+	.navScreen p {margin-left:10%; margin-right:10%; width:80%;}
+	.glossary .col-1, .glossary .col-2 {width:100%;}
+	.maps .map {height:280px;}
+	.tech-tools .block {height:300px;}
+}
+
+@media (max-width:860px) {
+	.agent_roster #mainContent .content .officeList li {height:380px;}
+}
+
+@media (max-width:768px) {
+	h2.page-title {font-size:2.2em;}
+	#logo-top {margin-top:20px; width:30%;}
+	#social-top {margin-top:20px; width:30%;}
+	h1 {font-size:1.6em;}
+	.large-screen-nav li {font-size:.8em; padding:11px 20px 0 0;}
+	.col-left {width:30%;}
+	.col-middle {margin-left:3%; width:65%;}
+	.col-right {float:left; margin-top:-40px; width:30%;}
+	#map-contact {height:300px; margin-right:20%; margin-left:20%; width:60%;}
+	.offices .center {margin-right:5%; margin-left:5%; width:90%;}
+	.newsletters li .navButton {font-size:1em;}
+	.viewport-article-content {margin-right:5%; margin-left:5%; width:90%;}
+	.forms p.note {margin-right:5%; margin-left:5%; width:90%;}
+	.tech-tools .block {height:auto; width:100%;}
+	.tech-tools .thumb {width:30%}
+	.agent-roster .execs {margin:0;}
+	
+	.agent_roster #mainContent .content li {height:340px;}
+  .agent_roster #mainContent .content h3 {font-size:1.3em;}
+  .agent_roster .roster-pagination li {height:auto; width:auto;}
+  
+  .button, #ctl00_ContentPlaceHolder1_Login1_LoginButton, #ctl00_ContentPlaceHolder1_btnSubmit {float:left; margin:0 1em 1em 0;}
+  .agent_roster .buttons {bottom:5px;}
+  
+  .agent_roster #mainContent .content .officeList li {height:375px;}
+}
+
+@media (max-width:700px) {
+	.agent_roster #mainContent .content li:nth-child(2n) {margin-right: 0;}
+  .agent_roster #mainContent .content li:nth-child(odd) {margin-right: 2%;}
+  .button, #ctl00_ContentPlaceHolder1_Login1_LoginButton, #ctl00_ContentPlaceHolder1_btnSubmit {float:none; margin:0;}
+  .agent_roster .buttons {bottom:22px;}
+  .agent_roster #mainContent .content li {height:315px; margin:0 2% 2% 0; width:49%;}
+  
+  .agent_roster #mainContent .content .officeList li {height:410px;}
+}
+
+@media (max-width:650px) {
+	.agent_roster #mainContent .content .officeList li {height:395px;}
+}
+
+@media (max-width:620px) {
+	.cusContact_form_sections input,
+	.cusContact_form_sections textarea,
+	.cusContact_form_sections select,
+	.cusContact_form_interior .captcha_image img,
+	.cusContact_form_interior .captcha_answer input {width:265px;}
+	.cusContact_form_interior {width:425px;}
+}
+
+@media (max-width:600px) {
+	 .customListings .listingImage {
+    width: 100%;
+  }
+  
+  #mainContent .content .customListings .listingDetails {
+    width: 100%;
+  }
+}
+
+@media (max-width:580px) {
+	#logo-top {width:40%;}
+	#search-top {left:0; position:relative;}
+	.col-left {margin-right:5%; margin-left:5%; width:90%;}
+	.col-left-login {width:98%;}
+	.col-left-login table {width:100%;}
+	.col-left .btn-home {float:left; margin-right:2%; width:48%;}
+	.col-middle {margin-right:5%; margin-left:5%; width:90%;}
+	.col-right {margin-left:5%; margin-top:20px; width:60%;}
+	.newsletters ul {float:none; margin:0; padding:0; width:100%;}
+	.agent-roster .agent-anchor {margin-right:5%; margin-left:5%; width:90%;}
+	.agent-roster h3.section-title {text-align:center;}
+	.agent-roster .agent {width:100% !important;}
+	.forms .col-1, .forms .col-2 {margin-right:5%; margin-left:5%; width:90%;}
+	.viewport-article-content td {padding:0;}
+	.tech-tools .thumb {width:40%}
+	.agent-roster .exec {margin:0; width:100%}
+	.agent-roster .teamA {height:auto; margin:0; text-align:left; width:100%}
+		.agent-roster .teamA img {float:left; margin:0 5% 0 0;}
+	.agent-roster .teamB {margin:0 0 40px 0; width:100%}
+		.agent-roster .teamB img {float:left;}
+}
+
+@media (max-width:567px) {
+	.agent_roster #mainContent .content .officeList li {height:365px;}
+}
+
+@media (max-width:550px) {
+	.agent_roster #mainContent .content li {height:320px;}
+  .button, #ctl00_ContentPlaceHolder1_Login1_LoginButton, #ctl00_ContentPlaceHolder1_btnSubmit {float:left; margin:0 1em 1em 0;}
+  .agent_roster .roster-pagination li {height:auto; width:auto;}
+  .agent_roster .buttons {bottom:5px;}
+  .agent_roster #mainContent .content .officeList li {height:375px;}
+}
+	
+@media (max-width:500px) {
+	.agent_roster #mainContent .content li {height:335px;}
+  .agent_roster .roster-pagination li {height:auto; width:auto;}
+  .agent_roster #mainContent .content .info p {font-size:0.95em;}
+  
+  .agent_roster #mainContent .content .officeList li {height:350px;}
+  
+  .agentInfo, #mainContent .content .agentDetails .bottomRow, #mainContent .content .agentDetails h1 {
+    text-align: center;
+  }
+  
+  #mainContent .content .agentDetails h1 {
+    text-align: center;
+  }
+  
+  #mainContent .content .agentDetails img {
+    float: none;
+    margin-right: 0;
+  }
+  
+  .agentListings .statusNav li {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width:480px) {
+	.cusContact_form_interior {width:100%;}
+	.cusContact_form_sections {margin-bottom:1.6em;}
+	.cusContact_form_sections .form_input_title {font-size:1.2em; padding-right:0; text-align:center; width:100%;}
+	.cusContact_form_sections input,
+	.cusContact_form_sections textarea,
+	.cusContact_form_sections select,
+	.cusContact_form_interior .captcha_image img,
+	.cusContact_form_interior .captcha_answer input {width:100%;}
+	.cusContact_form_interior .captcha_image {padding:1em 0;}
+	.cusContact_form_interior .captcha_answer {margin:0 0 1em;}
+	.form_button {text-align:center;}
+	.cusContact_form_interior .form_button .cusContact_button {margin:0;}
+}
+
+@media (max-width:450px) {
+	.agent_roster #mainContent .content .officeList li {height:470px;}
+  
+  .agent_roster #mainContent .content li {
+  	height: 340px;
+    float: none;
+	margin-right: 0;
+    text-align: center;
+	width: 100%;
+  }
+  
+  .agent_roster #mainContent .content h3 {
+    font-size: 1.8em;
+  }
+  
+  .agent_roster #mainContent .content .info p {font-size:1.2em;}
+  
+  .button, #ctl00_ContentPlaceHolder1_Login1_LoginButton, #ctl00_ContentPlaceHolder1_btnSubmit {
+    float: none;
+    margin: 0;
+    font-size: 1em;
+  }
+  
+  .agent_roster .buttons {
+    position: static;
+  }
+  
+  .agent_roster #mainContent .content .officeList li {height:525px;}
+}
+
+@media screen and (max-width: 412px) {
+  .agent_roster #mainContent .content li {
+  	height: 360px;
+  }
+  
+  .agent_roster #mainContent .content .officeList li {height:485px;}
+}
+
+@media (max-width:380px) {
+	.tech-tools .thumb {width:70%}
+	.tech-tools ul {margin:20px 0 0 5%; width:95%}
+}
+
+@media screen and (max-width: 350px) {
+  #ctl00_ContentPlaceHolder1_ucMySearches_lblSearchTotal {
+    margin-right: 5px;
+  }
+
+  #ctl00_ContentPlaceHolder1_ucMySearches_btnShownInactive, #ctl00_ContentPlaceHolder1_ucMySearches_btnNewSearch2 {
+    padding: 10px 20px;
+  }
+  
+  #mainContent .content .agentDetails h1 {font-size:2.2em;}
+  
+  #mainContent .content .agentDetails p {font-size:0.95em;}
+  
+  .agent_roster #mainContent .content .officeList li {height:440px;}
+  
+  .agent_roster .roster-pagination li {height:auto; width:auto;}
+}
+
+@media screen and (max-width: 330px) {
+	.agent_roster #mainContent .content .officeList li {height:425px;}
+}
+

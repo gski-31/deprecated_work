@@ -1,0 +1,851 @@
+/* Trims */	
+	.trim {
+		background: #333;
+		background: -moz-linear-gradient(top, #45484D 0%, #333 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484D), color-stop(100%,#333));
+		background: -webkit-linear-gradient(top, #45484D 0%,#333 100%);
+		background: -o-linear-gradient(top, #45484D 0%,#333 100%);
+		background: -ms-linear-gradient(top, #45484D 0%,#333 100%);
+		background: linear-gradient(to bottom, #45484D 0%,#333 100%);
+	}
+
+	.fade {background: rgba(0, 0, 0, 0.75); left:0; opacity:1; position:absolute; top:0; z-index:50;}
+	.ajax-gif {background:url("Templates/default/images/ajax-loader-dark.gif") 0 0 no-repeat; position:absolute; top:50%; margin-top:-16px; left:50%; margin-left:-16px; width:31px; height:31px; z-index:60;}
+
+/* Search Containers */	
+	.search-results-content-wrap {background:#656565; color:#ddd; height:100%; margin-left:190px;}
+	.search-results-content-wrap-positioner {float:left; width:100%;}
+	#SearchResultsContainer {position:relative; text-align: left; zoom:1;}
+	#SearchResultsContainer label {font-weight:normal;}
+
+.search-start-point {display:none; padding: 1.5em;}
+
+
+	
+	#disclaimer {background: #000; color: #CCC; padding:0.5em 1em; font-size:0.55em;}
+
+/* Refine Search Sidebar */
+	#refineSearchBackground {background:#1d1d1d; height:100%; position:absolute; top:0; left:0; width:190px; z-index:0;}
+
+	#refineSearch {color:#fff; float:left; position:absolute; width:190px; z-index:20;}
+	
+	#toggleRefineSearch {background:rgba(0, 0, 0, 0.65); border:1px solid #000; border-left:0; border-radius:0 6px 6px 0; cursor:pointer; height:56px; position:absolute; right:-20px; top:56px; width:20px;}
+	#toggleRefineSearch:hover {background:rgba(0, 0, 0, 1);}
+	#toggleRefineSearch .ui-icon {background-image:url("Templates/default/css/images/ui-icons_888888_256x240.png"); background-position:-33px -224px; left:50%; margin-top:-8px; margin-left:-8px; position:absolute; top:50%;}
+	#toggleRefineSearch:hover .ui-icon {background-image:url("Templates/default/css/images/ui-icons_ffffff_256x240.png");}
+		
+	.r_h_title {background:#555; color:#fff; border-bottom:1px solid #333; font-size:14px; line-height:1; margin:0; padding:12px 10px; height:14px; text-transform: uppercase; letter-spacing:0.1em;}
+	.rs_subtitle {font-weight:bold; font-size:0.85em; line-height:1; margin:0 0 0.5em;}
+	.rs_subtitle .rs_subtitle_icon {background-image:url("Templates/default/css/images/ui-icons_888888_256x240.png"); cursor:pointer; display:inline-block;}
+	.rs_subtitle .rs_subtitle_icon:hover {background-image:url("Templates/default/css/images/ui-icons_ffffff_256x240.png");}
+		
+	.r_section {border-bottom:1px solid #000; border-top:1px solid #333; padding:7px 10px; position:relative; zoom:1;}
+	.r_section:hover {background:#222; border-right:2px solid #001b4a;}
+	#r_filters_one:hover {background:transparent; border-right:0;}
+	.r_section .r_section_toggle {background:url("Templates/default/css/images/ui-icons_888888_256x240.png") -32px -16px no-repeat; float:right; display:inline-block; height:16px; width:16px;}
+	.r_section .r_section_selections {color:#aaa; font-size:0.8em; font-style:italic; line-height:1.2; padding:0;}
+	.r_section .r_section_input {background:url("Templates/default/images/000000_85.png") 0 0 repeat; line-height:1.5; padding:20px; min-width:200px; position:relative; z-index:10; zoom:1;}
+	.r_section .r_close_item {background-image:url("Templates/default/css/images/ui-icons_888888_256x240.png"); cursor:pointer; position:absolute; top:5px; right:5px;}
+	.r_section .r_close_item:hover {background-image:url("Templates/default/css/images/ui-icons_ffffff_256x240.png");}
+	.r_section .r_section_input_title {font-size:14px; font-weight:bold; line-height:1.2; margin:0 0px 10px 0; padding:0;}
+	.r_section .r_section_input_update {margin:10px 0;}
+
+	.r_section input[type=text],
+	.r_section textarea {background:#eee; border:1px solid #111; color:#555;
+		border-radius:0; -moz-border-radius:0; -webkit-border-radius:0;
+		outline:none;
+	}
+	.r_section input[type=text]:focus, 
+	.r_section textarea:focus {background:#f5f5f5; border:1px solid #555; color:#333;}
+
+	#r_additional_selected_options {font-size:12px; padding:10px;}
+
+	#r_add_location {background:#333; border-right:1px solid #000; padding:5px 10px;}
+	#r_minprice_input {margin-bottom:10px; margin-right:10px;}
+	#r_maxprice_input {}
+	#r_sqrft_from,
+	#r_sqrft_to,
+	#r_lot_size_from,
+	#r_lot_size_to {margin:0; width:75px;}
+	
+	.ui-menu {font-size:12px; height:200px; overflow-y:scroll;}
+	#r_price .combobox_input {height:17px; line-height:1; width:100px;}
+	#r_price .combobox_button {box-shadow: none; height: 23px; border: 1px solid #DDD; line-height: 1; padding: 0; margin-bottom: 10px;}
+	.r_section label {color:#aaa; font-size:0.75em; font-weight:normal; font-style:italic;}
+	
+	#r_sqrft .from,
+	#r_lot_size .from {float:left; width:80px;}
+	#r_sqrft .to,
+	#r_lot_size .to {float:right; width:80px;}
+	
+	.to span, .from span {display:block; line-height:1; margin:0 0 3px;}
+	
+	#r_add_location_selections {padding:0;}
+	
+	#r_update {padding:10px;}
+	#more_options_show {display:none;}
+	
+	#r_add_location_input {margin-bottom:0.5em;}
+	#r_add_city_input, #r_add_zip_input, #r_location_input  {width:94%;}
+	
+	#r_selected_cities, #r_selected_zip_codes, .r_selected_custom_options, #r_selected_neighborhoods {list-style:none; margin:0; padding:0}
+	#r_selected_neighborhoods {color:#aaa;}
+	.r_selected_custom_options li {clear:both; font-size:10px; padding:2px 0;}
+	#r_add_location_selections li {background:#000; border-radius:4px; color:#aaa; cursor:pointer; float:left; font-size:0.7em; line-height:1.5; margin:0 0.25em 0.25em 0; padding:0.25em 0.5em;}
+	#r_add_location_selections li:hover {background:#111; color:#fff;}
+	
+
+	.removeCity, 
+	.removeZip, 
+	.removeCustomOptionItem, 
+	.removeSchoolOptionItem, 
+	.removeSchoolDistrictOptionItem, 
+	.removeNeighborhood,
+	.removePoiItem
+		{background:url("Templates/default/css/images/ui-icons_888888_256x240.png") -84px -131px no-repeat; cursor:pointer; display:inline-block; height:10px; margin:0px 2px 0 0; text-indent:-99999px; width:10px;}
+	
+	#r_add_location_selections li:hover .removeCity, 
+	#r_add_location_selections li:hover .removeZip, 
+	#r_add_location_selections li:hover .removeCustomOptionItem, 
+	#r_add_location_selections li:hover .removeSchoolOptionItem, 
+	#r_add_location_selections li:hover .removeSchoolDistrictOptionItem, 
+	#r_add_location_selections li:hover .removeNeighborhood,
+	#r_add_location_selections li:hover .removePoiItem 
+		{background-image:url("Templates/default/css/images/ui-icons_ffffff_256x240.png");}
+	
+	#rs_console_content .removeSchoolOptionItem:hover, 
+	#rs_console_content .removeSchoolDistrictOptionItem:hover {background-image:url("Templates/default/css/images/ui-icons_222222_256x240.png")}
+
+	.checkLabelSecondLine {margin-left:26px;}
+
+	#beds-slider-range, #baths-slider-range {width:200px; padding-left:10px;}
+	#rs_MinBed, #rs_MaxBed,
+	#rs_MinBath, #rs_MaxBath {margin:0 10px 10px 0; }
+	
+	#r_new_listings_datepicker {display:block; font-size:12px;} 
+
+
+		.input_error {outline:1px solid #001b4a;}
+		
+	.view-type-buttons-container {float:right;}
+	.view-type-button {cursor:pointer; margin-left:1em;}
+	.view-type-button:hover,
+	.view-type-button.selected {color:#fff;}
+
+	.search-results-navigation {border:1px solid #000; color:#ddd; position:relative;}
+	.search-results-navigation-section {float:left; font-size:14px; line-height:1; padding:10px; position:relative;}
+	.search-results-navigation-section > span {display:inline-block; vertical-align:top; position:relative; top:3px;}
+	
+	.search-results-navigation-section .sr-sort-by,
+	.search-results-navigation-section .sr-listings-per-page {background:#fff; border:1px solid #000; color:#555; cursor:pointer; display:inline-block; height:20px; padding-right:10px; overflow:hidden; position:relative; top:0; width:140px; zoom:1;}
+	.sr-sort-by .selection-text, 
+	.sr-listings-per-page .selection-text {display:inline-block; line-height:1; padding:2px 3px;}
+	.sr-sort-by .ui-icon, 
+	.sr-listings-per-page .ui-icon {border-left:1px solid #CCC; display:inline-block; position:absolute; right:0; top:0; z-index:10;}
+	
+	.search-results-navigation-section.search-results-navigation-information {float:right;}
+	.search-results-navigation-section.search-results-navigation-information .listings-found {color: #FFF; font-size: 1.1em; display: inline-block; font-weight: bold;}
+	
+	.search-results-navigation-section .sr-listings-per-page {width:61px;}
+	
+	.search-results-navigation-sorting-options ul,
+	.search-results-navigation-listings-per-page ul {background:#FFF; color:#333; border:1px solid #CCC; list-style:none; margin:0; min-width:39px; padding:0; position:absolute; top:29px; z-index:50; right:27px;}
+	.search-results-navigation-sorting-options ul li,
+	.search-results-navigation-listings-per-page ul li {cursor:pointer; font-weight:normal; padding:5px 7px; text-align: left;}
+	.search-results-navigation-sorting-options ul li:hover,
+	.search-results-navigation-listings-per-page ul li:hover {background:#efefef;}
+
+	.sr-pagination-list {list-style:none; margin:0; padding:0;}
+	.sr-pagination-list .sr-pagination-item {background:transparent; border:0; cursor:pointer; display:inline-block; float:left; font-weight:normal; height:auto; letter-spacing:0; line-height:1; margin-right:5px; padding:0; border-radius:none;}
+	.sr-pagination-list .sr-pagination-item:hover {color:#fff;}
+	.sr-pagination-list .sr-pagination-item.selected {color:#999; font-weight:bold}
+
+
+
+/* Console */
+
+	#rsConsole {position:relative;}
+	#rs_console_header {background:#555; border-bottom:1px solid #333; color:#fff; font-size:12px; padding:5px 10px 0;}
+	#rs_console_content {background:#000; border-bottom:1px solid #000; position:relative;}
+		#rs_console_tabs {list-style:none; margin:0; padding:0;}
+		.rs_console_tab {background:transparent; cursor:pointer; font-weight:bold; float:left; font-size:14px; line-height:1; margin-right:5px; padding:9px 15px; position:relative; text-transform:uppercase; top:1px; z-index:10; zoom:1;}
+		.rs_console_tab.selected {background:#000; border:1px solid #333; border-bottom:0; color:#ddd; padding:9px 14px;}
+		
+		#rs_console_content_list {list-style:none; margin:0; padding:0;}
+		.rs_console_content_item {border-left:1px solid #333; display:none; padding:0.5em;}
+		.rs_console_content_item_description {color:#ccc; line-height:1.8; margin:0 0 10px; padding:0; font-size:1em;}
+	
+	/* console footer */
+		#rs_console_footer {background:#333; color:#ccc; border-top:1px solid #555; border-bottom:1px solid #000; font-size:0.8em; line-height:1; padding:4px 10px;}
+		#rs_console_footer a {color:#ccc; display:inline-block; font-weight:bold; line-height:1; margin-right:10px; text-decoration:none; text-transform:uppercase; vertical-align:top;}
+		#rs_console_footer a:hover {color:#fff;}
+		#rs_console_footer .ui-icon {background-image:url("Templates/default/css/images/ui-icons_cccccc_256x240.png"); padding:0; position:relative; top:-1px;}
+		#rs_console_footer span {display:inline-block; padding-top:1px; vertical-align:top; text-transform: uppercase;}
+		#rs_console_footer a:hover .ui-icon {background-image:url("Templates/default/css/images/ui-icons_ffffff_256x240.png");}
+	
+	#rs_console_content_open_close {background-image:url("Templates/default/css/images/ui-icons_ffffff_256x240.png"); cursor:pointer; float:right; position:relative; top:1px;}
+
+	.console-current-left {float:left; width:370px;}
+	.console-current-right {float:right; width:370px;}
+	.console-current-bottom {clear:both; font-size:11px; padding-top:10px;}
+	.console_context {font-size:11px; line-height:1.5;}
+	.console_context .context_items {font-weight:bold;}
+
+	#more_options_update_form {}
+
+
+/* Search Results Content */
+	#SearchResultsContent {min-height:700px; padding:20px 1.5em; position:relative;}
+	#SearchResultsContentLoading {background:#f3f3f3; color:#333; bottom:0; left:0; padding-top:300px; position:absolute; right:0; text-align:center; top:0;z-index:9999;}
+	#SearchResultsContent.map-view {padding:0;}
+	.galleryViewButton,
+	.listViewButton,
+	.mapViewButton {border:1px solid #000; cursor:pointer; display:inline-block; height:24px; position:relative; text-indent:-99999px; top:-6px; width:24px;}
+	
+	.resultHeaderSection .listViewButton {background-position:-3px -2px;}
+	.resultHeaderSection .galleryViewButton {background-position:-31px -2px;} 
+	.resultHeaderSection .mapViewButton {background-position: -59px -3px;} 
+
+
+
+
+
+/* alerts */	
+
+	#search-multi-results {list-style:none; margin:0; padding:0;}
+	.search-multi-result {background:#f5f5f5; border:1px solid #ccc; border:radius:6px; color:#888; cursor:pointer; font-size:14px; line-height:1; margin-bottom:5px; padding:10px;}
+	.search-multi-result:hover {background:#eee; border:1px solid #aaa; color:#333;}
+
+	
+	
+	.searchErrorMessage {color:#333;}
+	.searchErrorMessage h3 {border-bottom:2px solid #001b4a; font-size:24px; font-weight:bold; margin-bottom:10px; padding:10px 0;}
+	
+
+	#multiResultContainer {background:#fff; padding:20px;}
+		#multiResultContainer ul {margin:0; padding:0}
+		#multiResultContainer ul li {list-style:none; margin:0 0 10px; padding:10px; border-radius:6px; border:1px solid #ccc; cursor:pointer;}
+		#multiResultContainer ul li:hover {background:lightgreen;}
+
+/* HEADER */
+	.SearchResultHeader {clear:both; line-height:1; list-style:none; margin:0 0 10px 0; padding:0;}
+	.SearchResultHeaderBottom {}
+	.resultHeaderSection {border:1px solid #000; color:#ddd; float:left; font-size:14px; height:16px; padding:10px; position:relative;}
+	.resultHeaderSection .sr_paging {display:inline-block;}
+	.resultHeaderSection.viewTypesHeaderSection {float:none; position:static; text-align:right;}
+	
+	.SearchResultHeader span {display:inline-block; text-align:left; vertical-align:top;}
+	.SearchResultHeader .sr_pagination_item {background:transparent; border:0; cursor:pointer; display:inline-block; float:left; font-weight:normal; height:auto; letter-spacing:0; line-height:1; margin-right:5px; padding:0; border-radius:none;}
+	.SearchResultHeader .sr_pagination_item:hover {color:#fff;}
+	.SearchResultHeader .sr_pagination_item.selected {color:#999; font-weight:bold}
+
+	.page-info {position:relative; zoom:1;}
+		#searchResultsTitle {clear:both; border:1px solid #000; font-size:14px; font-weight:normal; padding:0.5em 1em;}
+		#searchResultsTitle span {float:left;}
+		#searchResultsTitle #listingsFound {float:right;}
+		.sr_sortBy, .sr_listingsPerPage {background:#fff; border:1px solid #000; color:#555; cursor:pointer; display:inline-block; height:18px; padding-right:10px; overflow:hidden; position:relative; top:-3px; width:140px; zoom:1;}
+		.sr_listingsPerPage {color:#555; width:47px;}
+		.sr_sortBy:hover, .sr_listingsPerPage:hover {color:#333;}
+		.sr_sortBy .ui-icon, .sr_listingsPerPage .ui-icon {border-left:1px solid #ccc; display:inline-block; position:absolute; right:0; top:0; z-index:10;}
+		.sr_sortBy .selection_text, .sr_listingsPerPage .selection_text {line-height: 1.1; padding:2px 3px;}
+		
+		.sortingOptions, .listingsPerPageOptions {background:#fff; border:1px solid #ccc; color:#333; list-style:none; margin:0; padding:0; position:absolute; top:25px; z-index:9999; right:27px;}
+		.sortingOptions li, .listingsPerPageOptions li {cursor:pointer; font-weight:normal; padding:6px 10px; text-align:left;}
+		.sortingOptions li:hover, .listingsPerPageOptions li:hover {background:#efefef;}
+		
+		#sr_Listings .sortingOptions, #sr_Listings .listingsPerPageOptions {top:18px; width:230px;}
+		
+		.listingsPerPageOptions .listingsPerPage {width:20px;}
+		
+
+	#viewTypesSelector {position:relative; top:-4px;}
+		
+
+	.view-type-select-button {background:url("Templates/t700/images/view-icons.png") 0 0 no-repeat #6a6a6a; border-left:0; display:inline-block;}
+	.view-type-select-button:hover {background-color:#6a6a6a;}
+	.view-type-select-button:first-child {border-radius:4px 0 0 4px; border-left:1px solid #222;}
+	.view-type-select-button:last-child {border-radius:0 4px 4px 0;}
+	.view-type-select-button.current {background-color:#555; font-weight:bold;}
+	
+
+
+
+/** pagination **/	
+	#sr_pagination_bottom, #sr_pagination_top {padding:5px 0; margin-bottom:10px; border-bottom:1px dotted #dedede;}
+	#sr_pagination_bottom {clear:both; margin:10px 0; border-bottom:0; border-top:1px dotted #dedede;}
+	.sr_pagination_list {list-style:none; margin:0; padding:0;}
+	
+	.sr_pagination_item {background:url("http://www.lawyerstitlearizona.com/images/search_results_pagination_sprite.png") 0 0 repeat-x; border:1px solid #d9d9d9; cursor:pointer; display:inline-block; float:left; height:17px; letter-spacing:0; line-height:1; margin-right:3px; padding:5px 7px 0; border-radius:5px;}
+	.sr_pagination_item:hover {background-position: 0 -29px; color:#fff; border-color:#515151;}
+	
+	.sr_pagination_item.disabled {background:none; border:0; color:#000; cursor:default;}
+	.sr_pagination_item.selected {background-position: 0 -58px; border-color:#b08e09; color:#000; cursor:default;}
+
+
+	
+	#r_new_listings {padding-bottom:5px;}
+
+/** more options **/
+	#r_more_options {border-bottom:0; position:relative; zoom:1;}
+
+	#r_more_options_content {list-style:none; margin:0; padding:0; position:relative; zoom:1;}
+	#r_more_options_content:after {clear:both; display:block; height:0; line-height:0; visibility:hidden; content:"";}
+	#r_more_options_content ul {clear:both; list-style:none; margin:0; padding:0;}
+	
+	#r_more_options_content #r_more_options_category_tabs {clear:none;}
+	#r_more_options_content #r_more_options_categories {clear:both;}
+	
+		#r_more_options_category_tabs li {float:left; font-size:11px; margin:0 5px 5px 0;}
+		
+		#r_school_district_options {padding:10px;}
+		#r_school_district_options li {background:#222; border:1px solid #000; border-top:1px solid #333; padding:0.5em 0.75em;}
+		#r_school_district_options li:hover {background:#333;}
+		#r_school_district_options li label,
+		#r_school_district_options li input {cursor:pointer;}
+		#r_school_district_options .school_districts_checkbox {margin-right:1em;}
+		
+		#r_school_options {background:#333;}
+		#r_school_options li {line-height:1.5;}
+		#r_school_options li:hover {background:#444;}
+		#r_school_options .r_schools_content_filters {background:url("Templates/t700/images/white-highlight-top.png") 0 0 repeat-x #eee; border-bottom:1px solid #ccc; padding:10px;}
+		
+		.r_schools_filter_toggle {color:#ddd; float:left; font-size:12px; margin-right:15px; position:relative; zoom:1;}
+		.r_schools_filter_toggle:hover {color:#fff;}
+		.r_schools_filter_types_list, 
+		.r_schools_filter_levels_list,
+		.r_schools_filter_districts_list {background:#555; border-top:1px solid #222; display:none; list-style:none; margin:0; padding:0; position:absolute; z-index:50;} 
+		.r_schools_filter_item {border:1px solid #222; border-top:0; line-height:1.2; margin:0; padding:6px 10px; min-width:140px;}
+		.r_schools_filter_item:hover {background:#444; cursor:pointer;}
+		.r_schools_filter_item.selected {background:#222;}
+		.r_schools_filter_item span {display:inline-block;}
+		.r_schools_filter_item .icon {height:16px; width:16px; margin-right:5px;}
+		.r_schools_filter_item .filter_text {width:80%;}
+		.r_schools_filter_item.selected .icon {background:url("Templates/default/css/images/ui-icons_ffffff_256x240.png") -64px -144px no-repeat; cursor:pointer;}
+		
+		.r_schools_content_list {list-style:none; margin:0; padding:0;}
+		#r_school_options .r_schools_content_list li {border-bottom:1px solid #111; border-top:1px solid #444; font-size:11px; line-height:1.3; margin:0; padding:5px 10px;}
+		#r_school_options .r_schools_content_list li input {float:left; margin:0 10px 0 0;}
+		.r_schools_filter_name {cursor:pointer;}
+	
+	.r_more_options_content_category {}
+	.r_more_options_header {font-weight:bold; font-size:14px;}
+	.r_more_options_content_list {}
+	.r_more_options_content_list li {background:#333; border:1px solid #000; float:left; font-size:14px; margin:0.25em .5%; padding:0.5em 1%; width:46%;}
+	.r_more_options_content_list li:hover {background:#555;}
+	.r_more_options_content_control {float:left; font-size:14px; margin:0 5px 2px 0; width:200px;} 
+	.more_options_checkbox {margin-right:0.5em;}
+	
+	#close_more_options {cursor:pointer; padding:10px; position:absolute; right:0; top:0;}
+	
+	#customControlsListTabs { float:left; list-style:none; margin:0; padding:0; width:25%;}
+	.customControlsListTab {border-bottom:1px solid #000; border-top:1px solid #444; color:#ddd; cursor:pointer; padding:7px 10px;}
+	.customControlsListTab:hover,
+	.customControlsListTab.selected {background:#333; color:#fff;}
+	.customControlsListTab .r_more_options_header {display:block; font-size:14px; font-weight:normal; line-height:1; margin:0; padding-top:2px;}
+	
+	#customControlsList {background:#444; border-left:1px solid #000; list-style:none; margin:0; height:135px; padding:4%; overflow: auto; margin-left: 25%}
+	#customControlsList ul {list-style:none; margin:0; padding:0; }
+	
+	#disclaimer {background: #000; color: #CCC; padding:0.5em 1em; font-size:0.55em;}
+	
+	
+/********************** POI **********************************/
+	.poi-legend {float:right; font-size:0.75em; margin-bottom:10px; padding:0.85em 0.5em 0;}
+	.poi-legend div {color: #fff; font-size:1.2em; margin-right:1em;}
+	.poi-legend span {display: inline-block; border:1px solid #000; background:#FFF; padding:0 0.25em;}
+	.poi-legend span em {display: inline-block; height:4px; width:20px; padding:0; margin:0 0 0.175em;}
+	.poi-legend .search-color em {background:red;}
+	.poi-legend .poi-color em {background:#000;}
+	
+	.poi_sub_categories {float:left; list-style:none; margin:0; padding:0; width:25%;}
+	.poi_sub_category {border-bottom:1px solid #000; border-top:1px solid #444; color:#ddd; cursor:pointer; padding:7px 10px;}
+	.poi_sub_category:hover,
+	.poi_sub_category.selected {background:#333; color:#fff;}
+	.poi_sub_category .poi_header {display:block; font-size:14px; font-weight:normal; line-height:1; padding-top:2px;}
+	
+	.poi_sub_category_result {float:right; list-style:none; margin:0; padding:0px; width:590px;}
+	.poi_sub_category_result ul {list-style:none; margin:0; padding:0; }
+	
+	.POIcategorySection {background:#222; border:1px solid #000; color:#ddd; border-top:0;}
+	.POIsection {background:#333; border-left:1px solid #000; display:none; margin-left: 25%;}
+	.POIdistance {border-bottom:1px solid #000; padding:10px;}
+	.POIselections {background:#3a3a3a; border-top:1px solid #555; height:266px;}
+	.POIschoolFilters, .POIselectAll {
+		background: #333;
+		background: -moz-linear-gradient(top, #45484D 0%, #333 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484D), color-stop(100%,#333));
+		background: -webkit-linear-gradient(top, #45484D 0%,#333 100%);
+		background: -o-linear-gradient(top, #45484D 0%,#333 100%);
+		background: -ms-linear-gradient(top, #45484D 0%,#333 100%);
+		background: linear-gradient(to bottom, #45484D 0%,#333 100%); 
+		border-bottom:1px solid #000; height:37px; padding:10px;}
+
+	#rsConsole label {font-weight:normal; margin:0 0 0 0.5em; line-height:1; vertical-align:top;}
+	#rsConsole input[type="checkbox"] {margin:0;}
+
+	.selectPOItoStart {background:#333; border-left:1px solid #000; display:block; height:260px; padding:4%; margin-left:25%}
+
+	.POIschoolItems, .POIschoolDistrictItems, .POIItems {height:228px; overflow:hidden; overflow-y:scroll; position:relative;}
+	.POIschoolDistrictItems {height:264px;}
+	.POIselectedSchoolsList, .POIselectedSchoolDistrictsList {font-size:10px; list-style:none; margin:0; padding:0;}
+	
+
+	.POIList {list-style:none; margin:0; padding:0;}
+	.POIList li {border-bottom:1px solid #111; border-top:1px solid #444; font-size:13px; line-height:1.1; margin:0; padding:0.5em 10px;}
+	.POIList li:hover {background:#444;}
+	.POIselectAllSchools input, .POIselectAllInput, .poiCheckbox {float:left; margin:0 0.5em 0 0;}
+	.POIselectedSchoolsList li, .POIselectedSchoolDistrictsList li {clear:both; padding:2px 0;}
+	.POIselectAllSchools {float:left; margin-right:10px;}
+	
+	.POIdistanceText {}
+	.POImodifyDistance {
+		background: #333;
+		background: -moz-linear-gradient(top, #45484D 0%, #333 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484D), color-stop(100%,#333));
+		background: -webkit-linear-gradient(top, #45484D 0%,#333 100%);
+		background: -o-linear-gradient(top, #45484D 0%,#333 100%);
+		background: -ms-linear-gradient(top, #45484D 0%,#333 100%);
+		background: linear-gradient(to bottom, #45484D 0%,#333 100%);
+		border: 1px solid #000; border-radius: 0.25em; color:#ffffff; cursor:pointer; padding:0.25em 0.5em;}
+	.POImodifyDistance:hover {background:#333;}
+	.POImodifyDistanceOptions {position:absolute; top:60px; z-index:500;}
+	.POIdistanceInput {margin:0 5px; width:40px;}
+	.distance-modifiers {margin-bottom:10px;}
+	.POIdistanceButton {}
+		
+	.r_school_districts_content_list {border-top:1px solid #000; list-style:none; margin:0; padding:0;}
+
+	.school_poi_item label {display: block;}
+	.school_poi_maponics .school_info_name { width: 50%; display: inline-block; }
+	.school_poi_maponics .school_info_attendance_zone { width: 12%; display: inline-block; }
+	.school_poi_maponics .school_info_ranking { width: 18%; display: inline-block; }
+	.school_poi_maponics .school_info_math_score { width: 8%; display: inline-block; }
+	.school_poi_maponics .school_info_reading_score { width: 8%; display: inline-block; }
+	.POIschoolFilters .school_info_attendance_zone { font-size: 12px; white-space: nowrap; }
+	.POIschoolFilters .school_info_ranking { font-size: 12px; white-space: nowrap; }
+	.POIschoolFilters .school_info_math_score { font-size: 12px; white-space: nowrap; }
+	.POIschoolFilters .school_info_reading_score { font-size: 12px; white-space: nowrap; }
+	
+	
+	/*********** new ui *******************/
+		#r_more_options_content_wrap_ui {}
+		#r_more_options_content_ui {list-style:none; margin:0; padding:0; position:relative;}
+		.r_more_options_item_ui {background:#333; display:none; width:100%; z-index:100; zoom:1;}
+		.r_more_options_item_ui h4 {
+			background: #333;
+			background: -moz-linear-gradient(top, #45484d 0%, #333333 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#333333));
+			background: -webkit-linear-gradient(top, #45484d 0%,#333333 100%);
+			background: -o-linear-gradient(top, #45484d 0%,#333333 100%);
+			background: -ms-linear-gradient(top, #45484d 0%,#333333 100%);
+			background: linear-gradient(to bottom, #45484d 0%,#333333 100%); 
+			border:1px solid #000; border-bottom-color:#000; color:#ddd; font-size:16px; font-weight:bold; line-height:1; margin:0; padding:0.5em 1em; text-transform:uppercase;}
+		.r_more_options_item_ui.top-level {padding:0; display:block; z-index:80;} 
+				
+		#r_more_options_top_level_categories {list-style:none; margin:0; padding:0; position:relative;}
+		#r_more_options_top_level_categories .top-level-category {
+			background: #333;
+			background: -moz-linear-gradient(top, #45484d 0%, #333333 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#333333));
+			background: -webkit-linear-gradient(top, #45484d 0%,#333333 100%);
+			background: -o-linear-gradient(top, #45484d 0%,#333333 100%);
+			background: -ms-linear-gradient(top, #45484d 0%,#333333 100%);
+			background: linear-gradient(to bottom, #45484d 0%,#333333 100%);
+			border:1px solid #000; color:#ddd; cursor:pointer; float:left; margin:0 1em 0.25em 0; padding:0.5em; text-align:center;}
+		#r_more_options_top_level_categories .top-level-category:hover {background:#45484d; color:#fff;}
+		.top-level-category .top-level-name {font-size:0.85em; line-height:1;}
+		.top-level-category .top-level-icon {background:url("Templates/t700/images/POI-sprite.png") 0 0 no-repeat; display:inline-block; height:24px; width:24px;}
+		#r_more_options_top_level_categories .top-level-category[data-category="shopping"],
+		#r_more_options_top_level_categories .top-level-category[data-category="property features"] {display:none;}
+		
+		.top-level-category       .top-level-icon-property-features {background-position:-120px -40px;}
+		.top-level-category:hover .top-level-icon-property-features {background-position:-144px -40px;}
+		.top-level-category       .top-level-icon-education         {background-position:-120px -96px;}
+		.top-level-category:hover .top-level-icon-education         {background-position:-144px -96px;}
+		.top-level-category       .top-level-icon-transportation    {background-position:-120px -156px;}
+		.top-level-category:hover .top-level-icon-transportation    {background-position:-144px -156px;}
+		.top-level-category       .top-level-icon-recreation        {background-position:-120px -216px;}
+		.top-level-category:hover .top-level-icon-recreation        {background-position:-144px -216px;}
+		.top-level-category       .top-level-icon-services          {background-position:-120px -278px;}
+		.top-level-category:hover .top-level-icon-services          {background-position:-144px -278px;}
+		.top-level-category       .top-level-icon-shopping          {background-position:-120px -336px;}
+		.top-level-category:hover .top-level-icon-shopping          {background-position:-144px -336px;}
+		
+		.r_more_options_item_ui h4 .title-text {display:inline-block; position:relative; top:2px;}
+		.r_more_options_item_ui h4 .title-text span {display:inline-block; vertical-align:top;}
+		.r_more_options_item_ui .poi-icon {background:url("Templates/t700/images/POI-sprite.png") 0 0 no-repeat; display:inline-block; height:16px; margin:0 5px 0 0; width:16px;}
+		
+		.r_more_options_item_ui .poi-icon-property-features {background-position:-168px -44px;}
+		.r_more_options_item_ui .poi-icon-education         {background-position:-168px -104px;}
+		.r_more_options_item_ui .poi-icon-transportation    {background-position:-168px -164px;}
+		.r_more_options_item_ui .poi-icon-recreation        {background-position:-168px -224px;}
+		.r_more_options_item_ui .poi-icon-services          {background-position:-168px -284px;}
+		.r_more_options_item_ui .poi-icon-shopping          {background-position:-168px -344px;}
+		
+		.r_more_options_category_backbutton {cursor:pointer; float:right; font-size:12px; display:inline-block; padding:0; text-transform:none; vertical-align:top;}
+		.more-options-category-backbutton-text {display:inline-block; position:relative; top:2px; vertical-align:top;}
+		.r_more_options_category_backbutton:hover {color:#fff;}
+		.r_more_options_category_backbutton .ui-icon {background-image:url("Templates/default/css/images/ui-icons_cccccc_256x240.png"); display:inline-block; }
+		.r_more_options_category_backbutton:hover .ui-icon {background-image:url("Templates/default/css/images/ui-icons_ffffff_256x240.png");}
+		
+		.r_more_options_item_ui h4 .update_search {bottom:20px; cursor:pointer; float:right; display:inline-block; left:20px; padding:5px 10px; position:absolute; text-decoration:none; text-transform:none;}
+		.r_more_options_item_ui h4 .update_search .ui-icon {background-image:url("Templates/default/css/images/ui-icons_888888_256x240.png"); display:inline-block; height:13px;}
+		.r_more_options_item_ui h4 .update_search:hover .ui-icon {background-image:url("Templates/default/css/images/ui-icons_222222_256x240.png"); display:inline-block; height:13px;}
+		
+		.distance-selection {background:#fff; border:1px solid #555; border-radius:0.5em; box-shadow:0px 0px 15px #000; color:#333; padding:1em; width:240px;}
+		.distance-selection .text {display:inline-block; padding-top:4px; vertical-align:top;}
+		#schoolDistanceInput {margin:0 5px; width:60px;}
+		.distance-selection .distance-amount {}
+		.distance-selection .ui-switch {margin:0px 5px;}
+	
+/*********** *******************************************/	
+	
+	.vts-icon {background:url("http://www.lawyerstitlearizona.com/images/icon-sprite.png") 0 0 no-repeat; display:inline-block; height:16px; position:relative; top:4px; width:16px; zoom:1;}
+	.vts-icon-list {background-position:-64px -104px;}
+	.view-type-select-button.current .vts-icon-list,
+	.view-type-select-button:hover .vts-icon-list {background-position:-44px -104px;}
+	
+	.vts-icon-gallery {background-position:-104px -44px;} 
+	.view-type-select-button.current .vts-icon-gallery,
+	.view-type-select-button:hover .vts-icon-gallery {background-position:-84px -44px;}
+	
+	.vts-icon-map {background-position:-24px -104px;} 
+	.view-type-select-button.current .vts-icon-map,
+	.view-type-select-button:hover .vts-icon-map {background-position:-04px -104px;}
+	
+	.sr_listing_meta_icon {background:url("Templates/default/css/images/ui-icons_cccccc_256x240.png") 0 0 no-repeat; display:inline-block; float:left; height:16px; width:16px;}
+	.sr_listing_meta li:hover .sr_listing_meta_icon {background-image:url("Templates/default/css/images/ui-icons_ffffff_256x240.png");}
+	.sr_listing_meta_icon_map {background-position:-16px -112px;}
+	.sr_listing_meta_icon_tour {background-position:-224px -128px;}
+	.sr_listing_meta_icon_favorites {background-position:-208px -112px;}
+	.sr_listing_meta_description {display:inline-block; padding:3px 0 0;}
+	
+	.sr_add_to_favorites, .sr_virtual_tour, .sr_map_route {cursor:pointer; position:relative;}
+	.sr_add_to_favorites:hover .sr_listing_meta_icon_favorites {background-image:url("Templates/default/css/images/ui-icons_888888_256x240.png");}
+	.sr_result .sr_listing_meta li.sr_added_to_favorites {color:#333;}
+	.sr_added_to_favorites .sr_listing_meta_icon_favorites {background:url("Templates/default/css/images/ui-icons_222222_256x240.png") -224px -112px no-repeat;}
+	
+	.sr_virtual_tour_link {color:#001b4a;}
+	.iconToolTip {display:none;padding:5px;background:#f9f3c8;position:absolute;left:30px;top:10px;color:#000;white-space:nowrap;font-size:11px;border:1px solid #000;z-index:999;}
+
+/************* gallery view ******************/
+	
+	.gallery-view #sr_Listings {clear:both; list-style:none; margin:0; padding:0;}
+	.gallery-view .sr_result {background:#333; border:1px solid #000; float:left; margin:0 0.45% 1em; padding:0; width:32%;  position:relative; zoom:1; opacity:1; filter:Alpha(Opacity=100);}
+	
+	.gallery-view .sr_header { background:#001b4a; margin:0; padding:0.75em 1em;}
+	.gallery-view .sr_header h3 {font-size:12px; font-weight:bold; line-height:1; margin:0; text-transform:uppercase;}
+	.gallery-view .sr_content {font-size:12px; line-height:1.5; min-height:112px; padding:10px;}
+		.gallery-view .sr_image {display:none; height:auto; margin:0 auto; width:100%;}
+		.gallery-view .sr_listing_link {color: #ffffff; display:block; text-decoration:none;}
+		.gallery-view .sr_listing_link:hover {color: #ffffff;}
+		.gallery-view .sr_image_loader {border:1px solid #000; display:block; height:152px; margin:0 auto; width:203px;}
+		.gallery-view .sr_image_loader_gif {display:block; margin:50px auto 0;}
+		.gallery-view .sr_price {font-size:14px; float:right;}
+		.gallery-view .sr_beds {}
+		
+	.gallery-view .sr_result.clearListing {clear:both;}
+
+	.gallery-view .sr_mlslogo img {position:absolute; height:24px; right:5px; bottom:5px;}
+	
+	.gallery-view .sr_listing_meta {border-top:1px solid #555; clear:both; list-style:none; font-size:10px; height:28px; margin:0; padding:5px;}
+	.gallery-view .sr_listing_meta li {color:#888; float:left; height:16px; padding:0 10px 0 0; text-indent:-99999px; width:16px;}
+	
+	
+/************* list view ******************/
+	.list-view #searchResultsTitle {
+		background: #333;
+		background: -moz-linear-gradient(top, #45484D 0%, #333 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484D), color-stop(100%,#333));
+		background: -webkit-linear-gradient(top, #45484D 0%,#333 100%);
+		background: -o-linear-gradient(top, #45484D 0%,#333 100%);
+		background: -ms-linear-gradient(top, #45484D 0%,#333 100%);
+		background: linear-gradient(to bottom, #45484D 0%,#333 100%);
+		border:1px solid #000; color:#ddd; font-size:12px; font-weight:bold; line-height:1; margin:0; padding:0.75em 2%; width:46%;}
+
+	.list-view #sr_map_canvas_wrap {color:#333; position:absolute; right:1.5em; top:20px; width:50%; z-index:25; zoom:1;}
+	.list-view #sr_map_canvas {border:1px solid #000; height:300px; margin-bottom:10px; zoom:1;}
+	.list-view #sr_extended_listing {background:#333; border:1px solid #000; min-height:150px; position:relative;}
+	.list-view .sr_map_wrap_header {
+		background: #333;
+		background: -moz-linear-gradient(top, #45484D 0%, #333 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484D), color-stop(100%,#333));
+		background: -webkit-linear-gradient(top, #45484D 0%,#333 100%);
+		background: -o-linear-gradient(top, #45484D 0%,#333 100%);
+		background: -ms-linear-gradient(top, #45484D 0%,#333 100%);
+		background: linear-gradient(to bottom, #45484D 0%,#333 100%);
+		border:1px solid #000; border-bottom:0; color:#ddd; font-size:10px; padding:0.75em 1em;}
+	.list-view .sr_map_wrap_header label {display:inline-block; line-height:1; padding-top:3px; vertical-align:top;}
+	.list-view .sr_map_wrap_header input[type="checkbox"] {margin-right:0.25em;}
+	
+	.list-view #sr_Listings {background:#333; border:1px solid #000; border-top-color:#444; border-bottom:0; clear:both; list-style:none; margin:0 0 10px; padding:0; width:45%;}
+	.list-view .sr_result {border-bottom:1px solid #000; color:#CCC; margin:0; padding:0; opacity:1; filter:Alpha(Opacity=100); position:relative; z-index:1;}
+	.list-view .sr_result.active {background:#222; z-index:10;}
+	.list-view .sr_result:hover {background:#222;}
+	
+	.list-view .sr_address_title {padding:5px 10px; line-height:1; margin:0; font-size:12px;}
+	.list-view .sr_header h3 {font-size:14px; font-weight:bold; line-height:1; text-transform:uppercase;}
+	.list-view .sr_content {float:left; font-size:10px; line-height:1.2; padding:1%; width:56%;}
+
+	.list-view .sr_content_info {font-size:10px;}
+	.list-view .sr_secondary_content {float:right; font-size:11px; padding:1%; text-align:right; width:23%;}
+		.list-view .sr_listing_image_link {display:block; float:left; line-height:1; margin:0; padding:1%; width:15%;}
+		.list-view .sr_image {display:none; height:auto; width:auto; max-width:100%;}
+		.list-view .sr_image:hover {}
+		.list-view .sr_image_loader {border:1px solid #ddd; height:58px; margin:0; width:78px; }
+		.list-view .sr_image_loader_gif {display:block; margin:10px auto 0;}
+		.list-view .sr_price {color:#fff; font-size:12px; font-weight:bold; margin-bottom:10px;}
+		.list-view .sr_beds {}
+		.list-view .sr_FormattedAddress {font-size:12px; font-weight:bold; line-height:1; margin:0 0 0.35em;}
+		.list-view .sr_FormattedAddress a {color:#ddd; text-decoration:none;}
+		.list-view .sr_FormattedAddress a:hover {color:#fff; text-decoration:none;}
+		.list-view .sr_address2 {font-size:10px; margin:0 0 0.35em;}
+	
+	.list-view .sr_listing_meta_divide {clear:both; border-bottom:1px solid #000; height:0; padding:0; margin:0; }
+	.list-view .sr_listing_meta {
+		background: #333;
+		background: -moz-linear-gradient(top, #45484D 0%, #333 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484D), color-stop(100%,#333));
+		background: -webkit-linear-gradient(top, #45484D 0%,#333 100%);
+		background: -o-linear-gradient(top, #45484D 0%,#333 100%);
+		background: -ms-linear-gradient(top, #45484D 0%,#333 100%);
+		background: linear-gradient(to bottom, #45484D 0%,#333 100%);
+		border-top:1px solid #555; clear:both; line-height:1; list-style:none; font-size:12px; margin:0; height:20px; padding:2px 0 0 0;}
+	.list-view .sr_result.active .sr_listing_meta,
+	.list-view .sr_result:hover .sr_listing_meta {background:#222; border-top-color: #444;}
+	.list-view .sr_listing_meta li {color:#ccc; float:left; padding:0 10px 0 0;}
+	.list-view .sr_listing_meta li a {color:#fff;}
+	.list-view .sr_listing_meta li:hover, .list-view .sr_listing_meta li a:hover {color:#fff;}
+	.list-view .sr_listing_meta .sr_add_to_favorites {}
+	.list-view .sr_listing_meta .sr_virtual_tour {}
+	.list-view .sr_listing_meta .sr_map_route {}
+	
+	.addedToRouteNotification {background:url("Templates/default/images/000000_50.png") 0 0 repeat; color:#fff; position:fixed; bottom:0; left:75%; z-index:99999; padding:10px;}
+	
+	.list-view .sr_mlslogo img {max-height:20px; max-width:50px;}
+	
+	.sr_extended_listing_image_link {cursor:default; display:block; padding:1em; position:relative; width:auto;}
+	#sr_extended_listing .sr_image {height:auto; width:100%;}
+	#sr_extended_listing .sr_content {float:left; padding-left:1.5em; width:auto;}
+	#sr_extended_listing .sr_secondary_content {padding-right:1.5em;}
+	.sr_extended_gallery_overlay {background:url("Templates/default/images/000000_50.png") 0 0 repeat; display:none; position:absolute; top:6px; left:6px; height:245px; width:327px;}
+	.sr_extended_listing_image_link:hover .sr_extended_gallery_overlay {display:block;}
+	
+	.sr_listing_extras {clear:both; padding:5px 1em;}
+	.sr_listing_extras_thumb {cursor:pointer; height:24px; margin:2px; width:32px;}
+	.sr_listing_extras_description {font-size: 10px; line-height:1.3; margin:0; padding:0;}
+	
+	
+	
+/************* map view ******************/
+	.map-view #sr_map_canvas_wrap {height:730px; float:left; margin:0; width:80%;}
+	.map-view #sr_map_canvas {background:#ccc; color:#333; height:100%; width:100%;}
+	
+	.map-view #sr_Listings {clear:both; list-style:none; margin:0; padding:0; width:100%;}
+	#srListingsHeaderTableContainer table {width:100%;}
+	#srListingsHeaderTableContainer th {border:1px solid #000; font-size:0.85em; font-weight:normal; padding:0.5em; text-align:center;}
+	#srListingsHeaderTableContainer th .sr_sortBy {background:transparent; color:#fff; border:0; margin:0; padding:0; top:0; width:auto} 
+	#srListingsHeaderTableContainer th .sortingOptions {left:auto; right:0;}
+	.map-view .sr_result {margin:0; padding:0;}
+	.map-view .sr_result td {background:#333; padding:0 0.5em;}
+	.map-view .alt-row td {background:#222;}
+	.map-view .sr_result:hover td {background:#444; box-shadow:none;}
+	.map-view .sr_map_wrap_header {display:none;}
+	.map-view #searchResultsTitle #listingsFound {float:none;}
+	#srListingsTableContainer {overflow:auto; height: 150px;}
+	
+	#srListingsHeaderTableContainer th.col1,
+	#srListingsTableContainer td.col1 {}
+	#srListingsHeaderTableContainer th.col2,
+	#srListingsTableContainer td.col2  {width:15%;}
+	#srListingsHeaderTableContainer th.col3,
+	#srListingsTableContainer td.col3  {width:10%;}
+	#srListingsHeaderTableContainer th.col4,
+	#srListingsTableContainer td.col4  {width:10%;}
+	#srListingsHeaderTableContainer th.col5,
+	#srListingsTableContainer td.col5  {width:10%;}
+	#srListingsHeaderTableContainer th.col6,
+	#srListingsTableContainer td.col6  {width:10%}
+	#srListingsHeaderTableContainer th.col7,
+	#srListingsTableContainer td.col7  {width:10%}
+	#srListingsHeaderTableContainer th.col8,
+	#srListingsTableContainer td.col8  {text-align:center; width:5%;}
+	
+	.map-view .sr_header h3 {font-size:12px; font-weight:bold; line-height:1; text-transform:uppercase;}
+	.map-view .sr_content {font-size:11px; text-align:left; vertical-align:middle;}
+	.map-view .sr_content h3,
+	.map-view .sr_content h4 {margin:0;}
+		.map-view .sr_price {} 
+		.map-view .sr_beds {}
+		.map-view .sr_FormattedAddress {font-size:11px; font-weight:bold; line-height:1;}
+		.map-view .sr_FormattedAddress a {color:#ddd;}
+		.map-view .sr_FormattedAddress a:hover {color:#fff; text-decoration:none;}
+		.map-view .sr_address2 {font-size:11px; font-weight:bold;}
+		.map-view .sr_mlslogo img {height:24px;}
+		.map-view .sr_viewOnMap {background-image:url("Templates/default/css/images/ui-icons_888888_256x240.png"); cursor:pointer;}
+		.map-view .sr_viewOnMap:hover {background-image:url("Templates/default/css/images/ui-icons_222222_256x240.png");}
+		
+	.map-view .sr_listing_meta {clear:both; list-style:none; font-size:12px; margin:0 0 10px 10px; min-height:12px; padding:0;}
+	.map-view .sr_listing_meta li {float:left; margin-right:20px;}
+	.map-view .sr_listing_meta .sr_add_to_favorites {}
+	.map-view .sr_listing_meta .sr_virtual_tour {}
+	.map-view .sr_listing_meta .sr_map_route {}
+	
+	
+	
+	.map-view #listingResults {height:730px; overflow:auto; width:20%; float:right; background: #000;}
+	.map-view .sr-listing {padding:0;}
+	.map-view .sr-listing ul {border-bottom:2px solid #e9e5dc; line-height:1; list-style:none; margin:0; padding:0;}
+	.map-view .sr-listing h3,
+	.map-view .sr-listing h4 {margin:0; padding:0;}
+	.map-view .sr-street {font-size:0.75em;}
+	.map-view .sr-city-state-zip {color:#aaa; font-size:0.7em; font-style:italic;}
+	.map-view .sr-listing .viewOnMap {color:#fbdb6a; cursor:pointer; font-size:0.7em; margin:0; padding-top:4px; vertical-align:top;}
+	.map-view .sr-info {font-size:0.7em;}
+	.map-view .sr-image {height:auto; width:100%;}
+	.map-view .sr-listing-image-link {display:block; padding:0 0.5em;}
+	.map-view .sr-content {padding:0 0.5em 0.5em;}
+	.map-view .sr-listing .sr-meta {padding:0.25em 0.5em;}
+	.map-view .sr-meta li {display:inline-block;}
+	.map-view .sr-listing .sr_listing_meta_description {display:none;}
+	.map-view .sr-mlslogo {height:auto; width:auto; max-height:20px; max-width:20px;}
+	.map-view .sr-mls-number {font-size:0.75em;}
+	.map-view .sr-open-house {margin:10px;}
+	.map-view .sr-open-house .title {color:#fff; font-size:.9em; font-weight:bold;}
+	.map-view .sr-open-house .content {color:#fbdb6a; font-size:.7em;}
+	.map-view .sr-price {padding: 0.25em 0.5em; font-size: 0.75em;}
+	.map-view .sr-header {padding:0.5em; background:#000;}
+	
+	#SearchResultsContent ::-webkit-scrollbar              {background:#777; width:12px;}
+	#SearchResultsContent ::-webkit-scrollbar-button       { /* 2 */ }
+	#SearchResultsContent ::-webkit-scrollbar-track        {box-shadow:inset 0 0 6px rgba(0,0,0,0.6); border-radius:10px;}
+	#SearchResultsContent ::-webkit-scrollbar-track-piece  { /* 4 */ }
+	#SearchResultsContent ::-webkit-scrollbar-thumb        {border-radius: 10px; background:rgba(202, 202, 202, 0.8); box-shadow:inset 0 0 6px rgba(0,0,0,0.5);}
+	#SearchResultsContent ::-webkit-scrollbar-corner       { /* 6 */ }
+	#SearchResultsContent ::-webkit-resizer                { /* 7 */ }
+
+
+/*************** Map Route ********************/
+	.adp, .adp table, .adp-list {color:#FFF;}
+	
+	.map-view .sr-listing.ui-state-disabled {opacity:1; filter: Alpha(Opacity=100);}
+
+	#mapRoute {background:url("Templates/default/images/000000_85.png") 0 0 repeat; color:#001b4a; margin:0; padding:0;}
+	#mr_header {background:#ffffff; border:1px solid #555; border-bottom:0px; font-size:14px; padding:5px 10px;}
+	#mr_content {border-left:1px solid #555; border-right:1px solid #555; padding:20px;}
+
+	#minimizeMapRoute, #closeMapRoute {cursor:pointer; float:right; margin:5px 5px 0 0;}
+
+	#mr_added_locations_list {list-style:none; margin:0; padding:0;}
+		.mr_added_location {color:#888; font-size:11px; padding:4px 5px 4px 20px; position:relative; zoom:1;}
+		.mr_added_location .ui-icon {background-image:url("Templates/default/css/images/ui-icons_888888_256x240.png"); cursor:pointer; position:absolute; top:0; left:0; z-index:20;}
+	#mr_add_starting_location {float:right; width:42%;}	
+	#mr_add_starting_location h5 {font-size:13px; line-height:1; margin:0 0 5px;}	
+		#mr_starting_address_input {box-shadow:none; margin-bottom:0.25em; width:200px;}
+		
+	#mapRouteSelections {clear:both;}
+		
+	#mr_map_route_button {}
+	#mr_edit_route_button {}
+	
+	#mr_results {}
+	#mr_map_canvas_wrap {color:#333; float:left; text-align:right; width:50%;}
+	#mr_map_canvas {color:#000; height:380px; margin-bottom:10px; text-align:left; width:100%;}
+	#mr_map_directions {background:#333; border:1px solid #555; color:#fff; float:right; font-size:0.75em; height:380px; overflow-y:scroll; padding:1em; width:50%;}
+	.adp-placemark {border:0!important; cursor:pointer; margin:10px 0; vertical-align: middle;}
+	.adp-placemark td {background:#222; color:#FFF; padding:0.25em 0.5em; vertical-align:middle;}
+	.adp-placemark img {height:auto !important; width:16px !important;}
+	
+	#mapRouteDroppable {background:transparent; border:3px dashed #CCC; float:left; padding:10px; width:50%;}
+	#mapRouteDroppable p {line-height:1.5; margin:0;}
+	#mapRouteDroppable .initial_text {color:#ccc;}
+	#mapRouteDroppable.map-route-droppable-active {border:3px dashed #555;}
+	#mapRouteDroppable.map-route-droppable-active .initial_text {color:#555;}
+	
+	.sr_result.ui-draggable-dragging {background:#fff; color:#333; border:1px solid #ccc; list-style:none; margin:0; padding:5px; width:420px; z-index:9999;}
+	.gallery-view .sr_result.ui-draggable-dragging {width:220px;}
+	.sr_result.ui-draggable-dragging:hover {background:#f9f9f9;}
+	
+	.sr_result.ui-draggable-dragging .sr_address_title {padding:5px 10px; line-height:1; margin:0; font-size:12px;}
+	.sr_result.ui-draggable-dragging .sr_header h3 {font-size:14px; font-weight:bold; line-height:1; text-transform:uppercase;}
+	.sr_result.ui-draggable-dragging .sr_content {float:left; font-size:10px; line-height:1.2; padding:5px; width:215px;}
+
+	.sr_result.ui-draggable-dragging .sr_content_info {font-size:10px;}
+	.sr_result.ui-draggable-dragging .sr_secondary_content {float:right; font-size:11px; padding:5px; text-align:right; width:55px;}
+		.sr_result.ui-draggable-dragging .sr_listing_image_link {display:block; float:left; line-height:1; margin:0; padding:5px; width:78px;}
+		.sr_result.ui-draggable-dragging .sr_image {border:1px solid #ccc; display:none; height:58px; width:78px;}
+		.sr_result.ui-draggable-dragging .sr_image:hover {}
+		.sr_result.ui-draggable-dragging .sr_image_loader {border:1px solid #ddd; height:58px; margin:0; width:78px; }
+		.sr_result.ui-draggable-dragging .sr_image_loader_gif {display:block; margin:10px auto 0;}
+		.sr_result.ui-draggable-dragging .sr_price {margin-bottom:10px;}
+		.sr_result.ui-draggable-dragging .sr_beds {}
+		.sr_result.ui-draggable-dragging .sr_FormattedAddress {font-size:11px; font-weight:bold; line-height:1;}
+		.sr_result.ui-draggable-dragging .sr_FormattedAddress a {color:#001b4a;}
+		.sr_result.ui-draggable-dragging .sr_FormattedAddress a:hover {color:#001b4a; text-decoration:none;}
+		.sr_result.ui-draggable-dragging .sr_address2 {font-size:10px;}
+		.sr_result.ui-draggable-dragging .sr_listing_meta {display:none;}
+		.sr_result.ui-draggable-dragging .sr_mlslogo img {height:20px;}
+	
+	
+	.saveSearchMessage {color:#001b4a; padding:10px;}
+	
+	
+/******************** office specifics *********************/	
+	#officeListingsHeader {padding:20px;}
+	.sr_office_name {float:left;}
+	.sr_office_agents_link {float:right;}
+	.sr_office_details {clear:both;}
+	
+
+/*** custom map overlay ***/
+	.customMapOverlayContainer {}
+	
+	.map-overlay {background:#fff; border:1px solid #333; width:300px;}
+	.map-overlay-header {background:#000; color:#ccc; padding:0.5em 1em;}
+	.map-overlay-header a {color:#ccc; text-decoration:none;}
+	.map-overlay-header a:hover {color:#fff;}
+	.map-overlay-content {color:#333;}
+	
+	.mapOverlayImageLink {background:#eee; float:left; padding:10px; width:120px;}
+	.mapOverlayImage {width:100%;}
+	.mapOverlayInfo {font-size:0.75em; margin-left:140px; padding:0.5em 1em;}
+		.mapOverlayBeds {}
+		.mapOverlayBaths {margin-bottom:5px;}
+		.mapOverlayListPriceLabel {}
+		.mapOverlayListPrice {font-weight:600;}
+	.mapOverlayFormattedAddress {clear:both; font-size:10px; font-size:0.75em; }
+		.mapOverlayAddress {}
+		.mapOverlayCity {}
+		.mapOverlayState {}
+		.mapOverlayZip {}
+		.mapOverlayMLS {font-size:85%; margin:5px 0;}
+		
+	.mapOverlayCloseButton {background-image:url("Templates/default/css/images/ui-icons_cccccc_256x240.png"); cursor:pointer; position:absolute; right:5px; top:8px;}
+	.mapOverlayCloseButton:hover {background-image:url("Templates/default/css/images/ui-icons_a83300_256x240.png");}
+	
+	.mapOverlayTriangle {background:url("Templates/t700/images/mapOverlayPointer.png") 0 0 no-repeat; bottom:-19px; height:20px; left:141px; position:absolute; width:20px;}
+
+
+
+	.map-mini-overlay {background:#fff; color:#333; border:1px solid #000; font-size:10px; width:180px;}
+	.map-mini-info-image-container {float:left; height:34px; width:34px;}
+	.map-mini-info-image-container img { height:34px; width:34px;}
+	.map-mini-info {float:right; padding:2px 5px; width:136px;}
+	.map-mini-street {}
+	.map-mini-price {font-weight:bold;}
+
+
+/******************** school search button ******************/
+	#SearchResultsContainer #backToSchoolSearch {display:none; float:left; margin-left:100px; margin:10px;}
+	#SearchResultsContainer #backToSchoolSearch a {background:#ccc; border:1px solid #ccc; border-radius:5px; color:#333; font-size:.8em; font-weight:normal; padding:4px 10px; text-transform:none;}
+	#SearchResultsContainer #backToSchoolSearch a:hover {background:#fff;}
+	#SearchResultsContainer #schoolBlurb {color:#fbdb6a; display:none; float:left; font-size:.9em; margin:10px 20px; width:300px;}
+
+
+
+
+
+	
+	
+	
+	
