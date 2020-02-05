@@ -1,2 +1,2 @@
-# old_sites
-A few old portfolios and some of the sites i've worked on in the past
+# Old Sites
+This repo houses a few of the (now aged) sites that I worked on early on. They were captured with a sitesucker tool later with the intent of adding to a visual portfolio. File sizes are a bit bloated and the folder will be removed if space becomes an issue.
